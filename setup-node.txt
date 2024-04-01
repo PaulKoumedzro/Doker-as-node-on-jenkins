@@ -1,0 +1,8 @@
+usermod -aG docker jenkins // create a group called docker and and username jenkins to the group.
+docker -aG docker ubuntu   // (or the username of the OS) .create a group called docker and and username ubuntu to the group.
+
+systemctl restart docker // restart the docker container
+
+su - jenkins // swicth to the jenkins user mode
+
+docker run hello-world
